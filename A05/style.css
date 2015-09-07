@@ -1,0 +1,40 @@
+h1, article, nav, footer, aside, form {
+    border-style: solid;
+    border-width: 1px;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-color: deeppink;
+    margin: 3px;
+}
+
+h1 {
+    height: 240px;
+}
+
+nav {
+    height: 50px;
+}
+aside {
+    position: relative;
+    width: 25%;
+    float: left;
+    height: 450px;
+}
+
+article, form {
+    position: relative;
+    width: 73.5%;
+    float: right;
+    height: 450px;
+    background-image: url("http://images6.fanpop.com/image/photos/34900000/kitten-kittens-34932031-500-742.jpg");
+}
+footer {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: aquamarine;
+}
