@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="page-header">
+        <h1>Playing with Bootstrap</h1>
+    </div>
+</div>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">A06 Bootstrap</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="home.html">Home</a></li>
+                <li class="active"><a href="page1.html">Forms</a></li>
+                <li><a href="page2.html">Images</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+    <div id="sidebar-wrapper" class="col-md-3">
+        <div id="sidebar">
+            <h3>Forms Page</h3>
+            <p>On this page, we look at forms using Bootstrap.</p>
+        </div>
+    </div>
+    <div id="main-wrapper" class="col-md-9 pull-right">
+        <div class="page-header">
+            <h3>Forms!</h3>
+        </div>
+      <p>Here's the first kind of form: a vertical form. There are also addons to the inputs. The form is vertically stacked.</p>
+        <form class="form-vertical">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon">Username</div>
+                    <input type="text" class="form-control" id="usrname" placeholder="Username">
+                </div>
+                <div class="input-group">
+                    <div class="input-group-addon">Email</div>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <div class="input-group-addon">Password</div>
+                    <input type="password" class="form-control" id="pwd" placeholder="Password">
+                </div>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="">Checkboxes
+                </label>
+            </div>
+            <div class="checkbox disabled">
+                <label>
+                    <input type="checkbox" value="" disabled>Disabled Checkbox
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form> <br>
+        <p>Here's the second kind of form: a horizontal form.</p>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="usrnameInput" class="col-sm-2 control-label">Username</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="usrnameInput" placeholder="Username">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="emailInput" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="emailInput" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="pwdInput" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="pwdInput" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Radio buttons
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">More Radio Buttons
+                    </label>
+                </div>
+                <div class="radio disabled">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>Disabled Radio Button</label>
+                </div>
+                    </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</div>
+<footer>
+    <div class="container">
+        <p class="text-muted">Footer &copy; 2015</p>
+    </div>
+</footer>
+
+</body>
+</html>

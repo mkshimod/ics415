@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="page-header">
+        <h1>Playing with Bootstrap</h1>
+    </div>
+</div>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">A06 Bootstrap</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="page1.html">Forms</a></li>
+                <li class="active"><a href="page2.html">Images</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+    <div id="sidebar-wrapper" class="col-md-3">
+        <div id="sidebar">
+            <h3>Images Page</h3>
+            <p>On this page, we look at different ways images can be displayed using boostrap.</p>
+        </div>
+    </div>
+    <div id="main-wrapper" class="col-md-9 pull-right">
+        <div class="page-header">
+            <h3>Images!</h3>
+        </div>
+        <p>Here are some thumbnails:</p>
+        <img src="http://digital.relevance.com/hs-fs/hub/207886/file-943134650-jpg/blog-files/google-panda-penguin.jpg" class="img-thumbnail" alt="Google Panda" width="304" height="236">
+        <img src="http://www.independent.co.uk/incoming/article9019141.ece/alternates/w620/google.jpg" class="img-thumbnail" alt="Google Knit" width="304" height="236">
+        <img src="http://www.google.com/logos/2011/ausday11-hp.jpg" class="img-thumbnail" alt="Google Orange" width="304" height="236">
+<p>Here's a responsive image:</p>
+        <img class="img-responsive" src="https://farm7.staticflickr.com/6067/6083128930_b32feff07d_o_d.jpg" alt="Earth">
+    </div>
+</div>
+
+</div>
+<footer>
+    <div class="container">
+        <p class="text-muted">Footer &copy; 2015</p>
+    </div>
+</footer>
+
+</body>
+</html>
