@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="page-header">
+        <h1>JQuery</h1> </div>
+</div>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#home" role="tab" data-toggle="tab">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <!-- START HOME CONTENT -->
+        <div class="tab-pane fade active in" id="home">
+
+            <h3 id="over">Mouse over here!</h3>
+
+            <button type="button" class="btn btn-danger">Mouse over me</button>
+            <button type="button" class="btn btn-success">Mouse over this too</button>
+
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                   <p> <label><input type="checkbox">Check here</label> </p>
+                 <p><label><input type="checkbox">Another check here</label></p>
+                        <p><label><input id="disabled" type="checkbox">One more checkbox</label></p>
+                        <p><button id="success" type="button" class="btn btn-success">Submit</button></p>
+
+
+                        <script>
+                            $(document).ready(function(){
+                                $("#success").click(function(){
+                                    alert("Congratulations!");
+                                });
+                            });
+                        </script>
+                        <script>
+                            $(document).ready(function(){
+                                $("button").mouseenter(function(){
+                                    $("button").css("background-color", "pink");
+                                });
+                                $("button").mouseleave(function(){
+                                    $("button").css("background-color", "black");
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">Footer &copy; 2015</p>
+    </div>
+</footer>
+</body>
+</html>
