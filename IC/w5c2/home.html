@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JQuery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#success").click(function(){
+                $("#form").load("test.html");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("h3").hide();
+            });
+            $("#show").click(function(){
+                $("h3").show();
+            });
+        });
+    </script>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="page-header">
+        <h1>JQuery Animations</h1> </div>
+</div>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#home" role="tab" data-toggle="tab">Home</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <!-- START HOME CONTENT -->
+        <div class="tab-pane fade active in" id="home">
+
+            <h3 id="over">Disappearing Text</h3>
+
+
+            <button type="button" class="btn btn-danger" id="hide">Click here</button>
+            <button type="button" class="btn btn-success" id="show">Now click here</button>
+
+        </div>
+    </div>
+
+    <div id="form" class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+                <p> <label><input type="checkbox">Check here</label> </p>
+                <p><label><input type="checkbox">Another check here</label></p>
+                <p><label><input id="disabled" type="checkbox">One more checkbox</label></p>
+                <p><button id="success" type="button" class="btn btn-success">Submit</button></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">Footer &copy; 2015</p>
+    </div>
+</footer>
+</body>
+</html>
