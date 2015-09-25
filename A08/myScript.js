@@ -26,12 +26,12 @@ $(document).ready(function () {
     $("#faq5").toggle();
   });
 
-  $("#q1").mouseover(function(){
-    $("#q1").css("background-color", "pink");
+  $(".q").mouseover(function(){
+    $(this).css("background-color", "pink");
   });
 
-  $("#q1").mouseout(function(){
-    $("#q1").css("background-color", "transparent");
+  $(".q").mouseout(function(){
+    $(this).css("background-color", "transparent");
   });
 
 });
