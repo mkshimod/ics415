@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="myScript.js"></script>
+    <title>ICS 415 A08</title>
+</head>
+<body>
+<div class="container">
+    <div class="page-header">
+        <h1>A08: Playing with JQuery</h1>
+    </div>
+</div>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">A08</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Main</a></li>
+                <li class="active"><a href="form.html">Form</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="wrapper">
+    <div id="sidebar-wrapper" class="col-md-3">
+        <div id="sidebar">
+            <h3>Main Page</h3>
+            <p>Find our most Frequently Asked Questions (FAQ) to the right of this sidebar. Click on a question to expand it, click again to hide.</p>
+        </div>
+    </div>
+    <div id="main-wrapper" class="col-md-9 pull-right">
+        <div class="page-header">
+            <h3>FAQ</h3>
+        </div>
+        <p>Input a URL to find out how many links are in that page:</p>
+        <input type="url" id="url">
+        <button type="submit" id="submit">Submit</button>
+        <div id="result"></div>
+
+       <br> <a href="https://www.microsoft.com/en-us/software-download/faq">See more FAQ here.</a>
+    </div>
+
+</div>
+<footer>
+    <div class="container">
+        <p class="text-muted">Footer &copy; 2015</p>
+    </div>
+</footer>
+</body>
+</html>

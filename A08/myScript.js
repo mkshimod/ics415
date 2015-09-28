@@ -35,3 +35,16 @@ $(document).ready(function () {
   });
 
 });
+
+
+$(document).ready(function() {
+  $("#submit").click(function() {
+    var myUrl = document.getElementById('index.');
+    $.ajax({
+      url: 'index.html', // NOTE: apparently you cannot access urls that are not relative to current directory with AJAX, so i had to use a local url
+      success: function(data) {
+        document.getElementById('result').innerHTML= "Number of links are: " + $(data).find('a').length;
+      }
+    })
+  })
+});
